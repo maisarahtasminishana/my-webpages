@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  .topnav a {
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav a.active {
+    background-color: #ffe066;
+    color: black;
+  }
+</style>
+</head>
+<body>
+<h1>my webpage</h1>
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About_Us</a>
+    <a href="gallary.html">Gallrey</a>
+    <a href="contact.html">Contact_Us</a>
+
+  </div>
+ 
+ <section>
+  
+    <img class="myslides" src="pic1.jpg" height="300" width="2000" >
+    <img class="myslides" src="pic3.jpg" height="300" width="2000" >
+    <img class="myslides" src="pic4.jpg" height="300" width="2000" >
+    
+  </section>
+  
+<script>
+var myIndex = 0
+function carousel() {
+ var i ;
+ var x = document.getElementsByClassName("myslides");
+ for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";
+ }
+ myIndex++
+ if(myIndex > x.length) {myIndex = 1}
+ x[myIndex-1].style.display = "block";
+ setTimeout(carousel, 3000);
+}
+carousel(); 
+</script>
+<span style ="font-size: 40px;">
+  <center>wellcome all to this website</center>
+</span>
+<br>
+<section class="sec-doc" >
+  <h2> Food</h2>
+  <p>
+    Food is any substance consumed to provide nutritional support for an organism. Food is usually of plant, animal or fungal origin, and contains essential nutrients, such as carbohydrates, fats, proteins, vitamins, or minerals.
+  </p>
+</section>
+<br><br><br><br><br>
+
+<p>
+  <h2>Pizza</h2>
+  <img src="download.jpeg" alt="" style="height: 350px;">
+  Pizza (Italian: [ˈpittsa], Neapolitan: [ˈpittsə]) is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.), which is then baked at a high temperature, traditionally in a wood-fired oven.[1] A small pizza is sometimes called a pizzetta. A person who makes pizza is known as a pizzaiolo.
+
+</p>
+<p>
+  <h2>Pastry</h2>
+  <img src="download (1).jpeg"  style="height: 350px;width: 400px;"">
+  Pastry refers to a variety of doughs, as well as the sweet and savoury baked goods made from them. These goods are often called pastries as a synecdoche, and the dough may be accordingly called pastry dough for clarity. Sweetened pastries are often described as bakers' confectionery
+
+</p>
+
+
+</body>
+</html>
